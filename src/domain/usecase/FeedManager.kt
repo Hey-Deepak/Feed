@@ -1,7 +1,8 @@
-package domain
+package domain.usecase
 
 import data.repo.FeedRepository
-import presentation.FeedView
+import presentation.view.FeedView
+import presentation.renderer.FeedItemRendererFactory
 
 class FeedManager(
     private val feedRepository: FeedRepository,

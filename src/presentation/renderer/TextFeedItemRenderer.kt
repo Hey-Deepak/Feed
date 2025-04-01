@@ -1,10 +1,9 @@
-package domain.repo
+package presentation.renderer
 
 import domain.model.FeedItem
 import domain.model.TextFeedItem
-import presentation.FeedItemRenderer
-import presentation.FeedType
-import presentation.FeedView
+import presentation.view.FeedType
+import presentation.view.FeedView
 
 class TextFeedItemRenderer : FeedItemRenderer {
     override fun render(feedItem: FeedItem): FeedView {

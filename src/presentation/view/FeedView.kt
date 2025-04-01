@@ -1,8 +1,5 @@
-package presentation
+package presentation.view
 
-enum class FeedType {
-    TEXT, IMAGE, VIDEO
-}
 
 data class FeedView(
     val id: String,
