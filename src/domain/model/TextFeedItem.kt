@@ -4,9 +4,14 @@ data class TextFeedItem(
     override val id: String,
     override val userName: String,
     override val timestamp: Long,
-    val text: String
+    override var likeCount: Int,
+    override var commentCount: Int,
+    val text: String,
 ): FeedItem(
     id = id,
     userName = userName,
     timestamp = timestamp
-)
+), Likeable, Commentable {
+    override fun onLike() { likeCount++ }
+    override fun onComment() { commentCount++ }
+}
