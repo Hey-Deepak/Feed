@@ -1,5 +1,5 @@
 import data.repo.MockFeedRepository
-import domain.model.FeedCard
+import util.FeedCard
 import presentation.renderer.FeedItemRendererFactory
 
 fun main() {
