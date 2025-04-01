@@ -4,6 +4,7 @@ import domain.model.FeedItem
 import domain.model.ImageFeedItem
 import domain.model.TextFeedItem
 import domain.model.VideoFeedItem
+import domain.repo.FeedRepository
 
 class MockFeedRepository : FeedRepository {
 
