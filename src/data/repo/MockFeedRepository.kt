@@ -13,19 +13,37 @@ class MockFeedRepository : FeedRepository {
                 id = "1",
                 userName = "HeyDeepak",
                 timestamp = System.currentTimeMillis(),
-                text = "This is a text post"
+                text = "Hey everyone! Just got back from a trip to the mountains. It was amazing!",
+                likeCount = 11,
+                commentCount = 11,
+                comments = mutableListOf("Wow, sounds fun!")
             ),
             ImageFeedItem(
                 id = "2",
-                userName = "HeyDeepak",
+                userName = "HiDeepak",
                 timestamp = System.currentTimeMillis(),
-                imageUrls = listOf("image1.jpg", "image2.jpg"),
+                imageUrls = listOf(
+                    "https://example.com/images/pic1.jpg",
+                    "https://example.com/images/pic2.jpg"
+                ),
+                likeCount = 22,
+                commentCount = 22,
+                comments = mutableListOf(
+                    "Osm View",
+                    "Chilling View"
+                )
             ),
             VideoFeedItem(
                 id = "3",
-                userName = "HeyDeepak",
+                userName = "NamasteDeepak",
                 timestamp = System.currentTimeMillis(),
-                videoUrl = "video.mp4",
+                videoUrl = "https://example.com/videos/sunset.mp4",
+                likeCount = 33,
+                commentCount = 33,
+                comments = mutableListOf(
+                    "Stunning view!",
+                    "Where was this shot?"
+                )
             )
         )
     }

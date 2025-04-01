@@ -14,7 +14,13 @@ class ImageFeedItemRenderer : FeedItemRenderer {
             userName = item.userName,
             timestamp = item.timestamp,
             content = item.imageUrls,
-            onClick = { println("Expanding image(s): ${item.imageUrls}") }
+            onClick = { println("Expanding image(s): ${item.imageUrls}") },
+            onLike = { item.onLike() },
+            onComment = { commentText ->
+                item.onComment(commentText)
+            },
+            likeCount = item.likeCount,
+            commentCount = item.commentCount
         )
     }
 }
