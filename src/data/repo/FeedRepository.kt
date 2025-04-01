@@ -1,4 +1,4 @@
-package data
+package data.repo
 
 import domain.model.FeedItem
 
