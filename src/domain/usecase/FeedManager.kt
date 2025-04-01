@@ -1,6 +1,6 @@
 package domain.usecase
 
-import data.repo.FeedRepository
+import domain.repo.FeedRepository
 import presentation.view.FeedView
 import presentation.renderer.FeedItemRendererFactory
 
