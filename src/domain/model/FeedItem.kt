@@ -14,5 +14,5 @@ interface Likeable {
 
 interface Commentable {
     var commentCount: Int
-    fun onComment()
+    fun onComment(comment: String)
 }

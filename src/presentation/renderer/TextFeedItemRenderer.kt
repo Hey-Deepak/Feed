@@ -17,7 +17,9 @@ class TextFeedItemRenderer : FeedItemRenderer {
             onClick = { println("Text clicked: ${item.text}") },
             onLongClick = { println("Text copied: ${item.text}") },
             onLike = { item.onLike() },
-            onComment = { item.onComment() },
+            onComment = { commentText ->
+                item.onComment(commentText)
+            },
             likeCount = item.likeCount,
             commentCount = item.commentCount
         )

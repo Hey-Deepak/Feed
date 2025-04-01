@@ -16,7 +16,9 @@ class VideoFeedItemRenderer : FeedItemRenderer {
             content = item.videoUrl,
             onClick = { println("Playing video: ${item.videoUrl}") },
             onLike = { item.onLike() },
-            onComment = { item.onComment() },
+            onComment = { commentText ->
+                item.onComment(commentText)
+            },
             likeCount = item.likeCount,
             commentCount = item.commentCount
         )

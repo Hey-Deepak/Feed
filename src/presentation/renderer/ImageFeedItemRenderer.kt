@@ -16,6 +16,9 @@ class ImageFeedItemRenderer : FeedItemRenderer {
             content = item.imageUrls,
             onClick = { println("Expanding image(s): ${item.imageUrls}") },
             onLike = { item.onLike() },
+            onComment = { commentText ->
+                item.onComment(commentText)
+            },
             likeCount = item.likeCount,
             commentCount = item.commentCount
         )

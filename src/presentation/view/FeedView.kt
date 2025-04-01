@@ -10,7 +10,7 @@ data class FeedView(
     val onClick: () -> Unit,
     val onLongClick: (() -> Unit)? = null,
     val onLike: (() -> Unit)? = null,
-    val onComment: (() -> Unit)? = null,
+    val onComment: ((String) -> Unit)? = null,
     val likeCount: Int = 0,
     val commentCount: Int = 0
 )

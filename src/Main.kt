@@ -8,6 +8,7 @@ fun main() {
     val feedManager = FeedManager(repository, rendererFactory)
 
     val feedViews  = feedManager.getRenderedFeed()
+
     feedViews.forEach { feedView ->
         println("\n-- FeedView --")
         println("Type: ${feedView.type}")
@@ -18,8 +19,6 @@ fun main() {
         feedView.onClick.invoke()
         feedView.onLongClick?.invoke()
         feedView.onLike?.invoke()
-        feedView.onComment?.invoke()
-        println("After click on Like and Comment Button")
-        println("Likes: ${feedView.likeCount}, Comments: ${feedView.commentCount}")
+        feedView.onComment?.invoke("You are Looking Like a WoW!!!")
     }
 }
